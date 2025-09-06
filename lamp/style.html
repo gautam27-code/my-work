@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <script>
+        function myFunction(){
+            document.getElementById('new').innerHTML="Js used in Header in script tag";
+        }
+
+        function add(){
+            document.getElementById('add').innerHTML=5+2;
+        }
+
+        window.alert("HELLO THERE!")
+
+        console.log(5+6)
+
+    </script>
+    <style>
+        body{
+            background-color: lightcoral;
+        }
+        #zoom{
+            transform: scale(1);
+            height: 100px;
+            padding-left: 100px;
+            transition: transform 0.3s
+            ease-in-out;
+        }
+        #zoom:hover{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="hello" style="font-size: 20px;">HELLO WORLD</p>
+    <button type="button" onclick="document.getElementById('hello').style.fontSize='40px'">Click</button>
+
+    <br>
+
+    <h4 id="two">Hello</h4>
+    <button type="button" onclick="document.getElementById('two').innerHTML='Hello I am going to change world'">Tap</button>
+
+    <br>
+
+    <button type="button" onclick="document.getElementById('lamp').src='pic_bulbon.gif'">ON</button>
+    <img id="lamp" src="pic_bulboff.gif" style="width: 50px;">
+    <button type="button" onclick="document.getElementById('lamp').src='pic_bulboff.gif'">OFF</button>
+
+    <br>
+    <br>
+
+    <p id="none">This will disappear</p>
+    <button type="button" onclick="document.getElementById('none').style.display='none'">Clear</button>
+
+    <br>
+
+    <p>Hidden text will appear below</p>
+    <p id="something" style="display: none;">Magic</p>
+    <button type="button" onclick="document.getElementById('something').style.display='block'">Display</button>
+
+    <br>
+
+    <p id="new">Js used in</p>
+    <button type="button" onclick="myFunction()">Try this</button>
+
+    <br>
+    <p id="add">5+2</p>
+    <button type="button" onclick="add()">Add</button>
+
+    <div id="black">hello</div>
+
+    <button id="mode" type="button">MODE CHANGE</button>
+
+    <div onmouseover="console.log('On image')">
+        <img id="zoom" src="hero_endframe.jpg">
+    </div>
+    
+    <button ondblclick="console.log('clicked 2 times');alert('Spider-Man')">Click 2 times</button>
+
+    <script src="style.js"></script>
+</body>
+
+</html>
