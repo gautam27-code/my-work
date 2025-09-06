@@ -1,0 +1,48 @@
+GOOGLE - CYBERSECURITY
+
+1)The TCP/IP Five-Layer Network Model
+	1)Physical layer - physical cables/devices(cabling,connectors) connected bw computers and server,describes how signals are transfered
+
+	2)Data link/network interface layer - Responsible for defining a common way(ethernet) of interpreting these signals so network devices can communicate.
+
+	3)Network/Internet layer - Allows different networks to communicate with each other through devices known as routers.
+				   A collection of networks connected together through routers(internet).
+	Protocol = IP(Internet protocol)(heart of internet, most small net. around world)
+	note: its net. layer which helps getting data bw user and server 
+
+	4)Transport layer - Sorts out which client and server programs are supposed to get that data.
+	Protocol - TCP(Transmission control pro) provides reliable data.[also UDP(user data protocol),not reliable data]
+
+	5)Application layer - Apps/Websites used
+
+Explanation of layers - The physical layer is the delivery truck and the roads. The data link layer is how the delivery trucks get from one intersection to the next over and over. The network layer identifies which roads need to be taken to get from address A to address B. The transport layer ensures that delivery driver knows how to knock on your door to tell you your package has arrived. And the application layer is the contents of the package itself.
+
+
+	
+2)Cables - Copper & Fiber
+Copper twisted pair cables:types = Cat 5, Cat 5e, Cat 6(Category)(Electrical pulses)
+Crosstalk is when an electrical pulse on one wire is accidentally detected on another wire,
+Fiber - optical tiny tubes of glass width hairs.(light pulse,form of 1s and 0s i.e binary)
+
+
+3)Hub (Physical layer device)- A hub is a physical layer device that allows for connections from many computers at once.Its depend on a system to take data or ignore data as per its need,as all systems/data is coonected, creating Collission domain(two or more data to collide at same time).
+
+Switch (Data link layer)- Specifies data to a particular system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+1) temp control fan
+2) LDR(measures intensity of light) based night lamp
+3) Obstacle Avoidance Robot
+   Bluetooth-Controlled Robot
+   Gesture-Controlled Robot
+   Remote-Controlled Robot
+4) Wind Turbine Power Generator
+5) Smart Home Automation:remote control home devices through internet.
+6) earthquake alarm system
+
+
+
+
+
+
+
+

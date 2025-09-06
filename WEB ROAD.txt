@@ -1,0 +1,33 @@
+1.HTML
+2.CSS
+3.JS
+
+1.Clone
+2.Portfolio
+3.Framework(Bootstrap / Tailwind)
+
+BACKEND - (API,Protocols,Requests,Response Cycle, Error Handling, Templating)
+	 - 1.Nodejs **
+	 - 2.Django
+	 - 3.php/java
+
+Databases - SQL(Django) **
+	    MongoDB: data not i form of tables(Nodejs)
+
+Essentials - Terminal commands
+	     Git/Git hub
+	     Deployment
+
+(4-5 months)
+
+FULL stack Projects - END to END(2-3)
+
+APPLY - Internships , JOBS , Freelancing
+
+
+
+Extra : Learn - React ** / Angular(Frontend library)
+	Learn - Typescript(advaance JS)
+TECHNOLOGY:
+	MERN - mongodb, expressjs, reactjs, nodejs
+	MEAN -                   , angular
