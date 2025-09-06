@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Function to make an API call and return a promise
+    function makeAPICall(url) {
+        // Return a promise that resolves with the JSON data from the API
+        return fetch(url)
+        .then(response => response.json())
+        // Note: Error handling is done in the calling function
+    }
+
+// Function to handle the data received from the API
+    function handleData(data) {
+        // Log the processed data to the console
+        console.log('Processed data:', data);
+    }
+
+// Main function to orchestrate the API calls
+function main() {
+    // Define two URLs for API calls
+    const url1 = 'https://jsonplaceholder.typicode.com/posts/1';
+    const url2 = 'https://jsonplaceholder.typicode.com/posts/2';
+
+    // Make first API call
+    // The promise chain: makeAPICall -> then(handleData) -> catch any errors
+    makeAPICall(url1)
+        .then(handleData)
+        .catch(err => console.log('error'));
+
+    // Make second API call
+    // This promise chain doesn't have error handling
+    makeAPICall(url2)
+        .then(handleData);
+    // Note: Errors in this call will be uncaught
+}
+
+// Execute the main function to start the program
+    main();
+    </script>
+
+</body>
+</html>

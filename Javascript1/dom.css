@@ -1,0 +1,8 @@
+.box{
+    height : 100px;
+    width : 100px;
+    border : 1px solid black;
+    text-align: center;
+    background-color: aquamarine;
+    margin: 5px;
+}

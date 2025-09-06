@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Function to make an API call
+        function makeAPIcall(url, callback) {
+        // Use the fetch API to make a GET request to the provided URL
+            fetch(url)
+        // Convert the response to JSON
+            .then(response => response.json())
+        // Pass the JSON data to the provided callback function
+            .then(data => callback(data))
+        // If an error occurs during the API call, log it to the console
+            .catch(err => console.error("Error during API call:", err.message))
+        }
+
+        // Callback function to handle the data received from the API
+        function handleData(data) {
+        // Log the processed data to the console
+        console.log('Processed data:', data)
+        }
+
+    // Main function to orchestrate the API calls
+    function main() {
+        // Define two URLs for API calls
+        const url1 = 'https://jsonplaceholder.typicode.com/posts/1';
+        const url2 = 'https://jsonplaceholder.typicode.com/posts/2';
+
+        // Make API calls to both URLs, using handleData as the callback
+        makeAPIcall(url1, handleData);
+        makeAPIcall(url2, handleData);
+    }
+
+    // Execute the main function to start the program
+    main()
+
+    </script>
+</body>
+</html>
+
